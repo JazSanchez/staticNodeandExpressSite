@@ -1,0 +1,45 @@
+{ "projects": [ {
+    "id": "0",
+    "project_name": "randomQuoteGenerator",
+    "description": "A random quote generator",
+    "technologies": ["JavaScript", "CSS", "HTML"],
+    "live_link": "https://jazsanchez.github.io/randomQuoteGenerator/",
+    "github_link": "https://github.com/JazSanchez/randomQuoteGenerator",
+    "image_urls": ["/static/image/randomQuote1.png", "/static/image/randomQuote2.png"]
+ } ,
+{
+    "id": "1",
+    "project_name": "dataPaginationAndFiltering",
+    "description": "Used pagination to add usability of a web page",
+    "technologies": ["JavaScript", "CSS", "HTML"],
+    "live_link": "",
+    "github_link": "https://github.com/JazSanchez/Data-Pagination-and-filtering",
+    "image_urls": ["/static/image/dataPagination1.png", "/static/image/dataPagination2.png"]
+},
+{
+    "id": "2",
+    "project_name": "interactiveForm",
+    "description": "Add customization, conditional behavior, interactivity and user validation to a form",
+    "technologies": ["JavaScript", "CSS", "HTML"],
+    "live_link": "",
+    "github_link": "https://github.com/JazSanchez/Interactive-form-project",
+    "image_urls": ["/static/image/interactiveForm1.png", "/static/image/interactiveForm2.png"]
+},
+{
+    "id": "3",
+    "project_name": "phraseHunterGame",
+    "description": "A browser-based guessing game",
+    "technologies": ["JavaScript", "CSS", "HTML"],
+    "live_link": "https://jazsanchez.github.io/phraseHunterGame/",
+    "github_link": "https://github.com/JazSanchez/phraseHunterGame",
+    "image_urls": ["/static/image/phraseHunter1.png", "/static/image/phraseHunter2.png", "/static/image/phraseHunter3.png"]
+},
+{
+    "id": "4",
+    "project_name": "employeeDirectory",
+    "description": "Employee directory",
+    "technologies": ["JavaScript", "CSS", "HTML"],
+    "live_link": "https://jazsanchez.github.io/employeeDirectory/",
+    "github_link": "https://github.com/JazSanchez/employeeDirectory",
+    "image_urls":["/static/image/emloyeeDirectory1.png", "/static/image/employeeDirectory2.png"]
+} ] }
