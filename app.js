@@ -1,5 +1,6 @@
 //Variables required
 const express = require("express");
+const { render } = require("express/lib/response");
 const { projects } = require("./data.json");
 const app = express();
 
@@ -21,7 +22,6 @@ app.get("/about", (req, res, next) => {
 });
 
 app.get("/projects/:id", (req, res, next) => {
-  res.locals.projects = projects;
   const projectId = req.params.id;
   const project = projects.find(({ id }) => id === +projectId);
   if (project) {
@@ -34,17 +34,21 @@ app.get("/projects/:id", (req, res, next) => {
 
 //Erros handlers
 app.use((req, res, next) => {
-  const err = new Error("404 error handler called");
+  const err = new Error("not-found");
   err.status = 404;
+  err.message = "404 error handler has been called";
   next(err);
 });
 
-app.use((err, req, res, next) => {
-  if (err.status === 404) {
-    res.render("not-found", { err });
-  } else {
-    err.message =
-      err.message || "Oops! It looks like something went wrong on the server.";
-    res.status(err.status || 500).render("error", { err });
+app.use((err, req, res) => {
+  if (err) {
+    console.log("Global error handler called", err);
   }
-});
+  if (err.status === 404) {
+    res.status = 404;
+    render("not-found", { err });
+  } else {
+    err.message = err.message || "Oops! There seems to be an error with the server";
+    res.status(err.status || 500).render('error', {err})
+   
+  }});

@@ -12,16 +12,16 @@
     "project_name": "Data Pagination and Filtering",
     "description": "Used pagination to add usability of a web page",
     "technologies": ["JavaScript", "CSS", "HTML"],
-    "live_link": "",
+    "live_link": "https://jazsanchez.github.io/Data-Pagination-and-filtering1/",
     "github_link": "https://github.com/JazSanchez/Data-Pagination-and-filtering",
-    "image_urls": ["/static/image/emloyeeDirectory1.png", "/static/image/dataPagination2.png"]
+    "image_urls": ["/static/image/dataPagination1.png", "/static/image/dataPagination2.png"]
 },
 {
     "id": 2,
     "project_name": "Interactive Form",
     "description": "Add customization, conditional behavior, interactivity and user validation to a form",
     "technologies": ["JavaScript", "CSS", "HTML"],
-    "live_link": "",
+    "live_link": "https://jazsanchez.github.io/Interactive-Form/",
     "github_link": "https://github.com/JazSanchez/Interactive-form-project",
     "image_urls": ["/static/image/interactiveForm1.png", "/static/image/interactiveForm2.png"]
 },
