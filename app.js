@@ -8,6 +8,7 @@ const app = express();
 app.set("view engine", "pug");
 app.use("/static", express.static("public"));
 
+//Port
 app.listen(3000, () => {
   console.log("The application is listening on localhost 3000!");
 });
@@ -27,12 +28,15 @@ app.get("/projects/:id", (req, res, next) => {
   if (project) {
     res.render("project", { project });
   } else {
-    //  res.sendStatus(404);
-    console.log("error 404");
+    const err = new Error('not found');
+    err.status = 404;
+    err.message = `Looks like the quote you requested doesn't exist`;
+    res.render("error", { err });
   }
 });
 
 //Erros handlers
+//404 Error
 app.use((req, res, next) => {
   const err = new Error("not-found");
   err.status = 404;
@@ -40,15 +44,15 @@ app.use((req, res, next) => {
   next(err);
 });
 
+//Global Error
 app.use((err, req, res) => {
   if (err) {
-    console.log("Global error handler called", err);
+    if (err.status === 404) {
+      res.status(404)
+      render(err.message, { err });
+    } else {
+      err.message = "Oops! There seems to be an error with the server";
+      res.status(500).render('error', { err });
+    }
   }
-  if (err.status === 404) {
-    res.status = 404;
-    render("not-found", { err });
-  } else {
-    err.message = err.message || "Oops! There seems to be an error with the server";
-    res.status(err.status || 500).render('error', {err})
-   
-  }});
+});

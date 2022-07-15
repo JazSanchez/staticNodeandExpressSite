@@ -1,6 +1,6 @@
 { "projects": [ {
     "id": 0,
-    "project_name": "random Quote Generator",
+    "project_name": "Random Quote Generator",
     "description": "A random quote generator",
     "technologies": ["JavaScript", "CSS", "HTML"],
     "live_link": "https://jazsanchez.github.io/randomQuoteGenerator/",
@@ -32,7 +32,7 @@
     "technologies": ["JavaScript", "CSS", "HTML"],
     "live_link": "https://jazsanchez.github.io/phraseHunterGame/",
     "github_link": "https://github.com/JazSanchez/phraseHunterGame",
-    "image_urls": ["/static/image/phraseHunter1.png", "/static/image/phraseHunter2.png", "/static/image/phraseHunter3.png"]
+    "image_urls": ["/static/image/phraseHunter1.png", "/static/image/phraseHunter2.png"]
 },
 {
     "id": 4,
@@ -41,7 +41,7 @@
     "technologies": ["JavaScript", "CSS", "HTML"],
     "live_link":  "https://jazsanchez.github.io/employeeDirectory/",
     "github_link": "https://github.com/JazSanchez/employeeDirectory",
-    "image_urls": ["/static/image/employeeDirectory1.png", "/static/image/employeeDirectory.png"]
+    "image_urls": ["/static/image/employeeDirectory1.png", "/static/image/employeeDirectory2.png"]
 }
 
 
