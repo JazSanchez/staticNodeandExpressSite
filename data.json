@@ -1,7 +1,7 @@
 { "projects": [ {
     "id": 0,
     "project_name": "Random Quote Generator",
-    "description": "A random quote generator",
+    "description": "This project generates a random quote everytime the button is clicked.",
     "technologies": ["JavaScript", "CSS", "HTML"],
     "live_link": "https://jazsanchez.github.io/randomQuoteGenerator/",
     "github_link": "https://github.com/JazSanchez/randomQuoteGenerator",
@@ -10,7 +10,7 @@
 {
     "id": 1,
     "project_name": "Data Pagination and Filtering",
-    "description": "Used pagination to add usability of a web page",
+    "description": "In this project I took an array of 42 students and assigned sets of 9 students per page. Added pagination buttons to paginate through each page displaying the students.",
     "technologies": ["JavaScript", "CSS", "HTML"],
     "live_link": "https://jazsanchez.github.io/Data-Pagination-and-filtering1/",
     "github_link": "https://github.com/JazSanchez/Data-Pagination-and-filtering",
